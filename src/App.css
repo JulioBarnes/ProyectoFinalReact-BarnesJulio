@@ -17,3 +17,30 @@
   background-color: #a5a5a5;
   color: #fff;
 }
+
+.ItemDetail{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.image-ItemDetail{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #02020223;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.button-ItemDetail{
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #5d73a5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
