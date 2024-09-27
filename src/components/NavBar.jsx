@@ -5,19 +5,19 @@ export default function NavBar(){
         <>
             <nav className='navClass'>
                 <button>
-                    <Link to={'/'}>Todos</Link>
+                    <Link className='link-NavBar' to={'/'}>Todos</Link>
                 </button>
                 <button>
-                    <Link to={'/masculino'}>Masculino</Link>
+                    <Link className='link-NavBar' to={'/masculino'}>Masculino</Link>
                 </button>
                 <button>
-                    <Link to={'/femenino'}>Femenino</Link>
+                    <Link className='link-NavBar' to={'/femenino'}>Femenino</Link>
                 </button>
                 <button>
-                    <Link to={'/unisex'}>Unisex</Link>
+                    <Link className='link-NavBar' to={'/unisex'}>Unisex</Link>
                 </button>
                 <a> 
-                    <Link to={'/checkout'}>
+                    <Link className='link-NavBar' to={'/checkout'}>
                         <img src="/CartIcon.png" alt="carrito de compras" />
                         <span>1</span>
                     </Link>

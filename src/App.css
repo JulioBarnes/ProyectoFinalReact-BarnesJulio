@@ -19,6 +19,7 @@
 }
 
 .ItemDetail{
+  flex-wrap: wrap;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
@@ -28,6 +29,7 @@
 }
 
 .image-ItemDetail{
+  object-fit: contain;
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -43,4 +45,10 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.link-NavBar{
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.25s;
 }
