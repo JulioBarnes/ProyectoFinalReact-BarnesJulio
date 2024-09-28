@@ -1,4 +1,5 @@
 import '../App.css'
+import { Link } from 'react-router-dom'
 import { useState , useEffect} from 'react'
 import {getFirestore, collection, getDocs} from 'firebase/firestore'
 export default function ItemList() {
@@ -28,7 +29,8 @@ export default function ItemList() {
                   <img src={item.image} alt='' className='image-ItemDetail'/>
                   <h5>{item.name}</h5>
                   <p>${item.price}</p>
-                  <button className='button-ItemDetail'> Ver Detalle
+                  <button className='button-ItemDetail'> 
+                    <Link to={`/item/${item.id}`}>Ver Detalle</Link>
                   </button>
               </div>
               ))

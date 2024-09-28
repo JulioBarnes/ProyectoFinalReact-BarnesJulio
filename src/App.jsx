@@ -7,6 +7,8 @@ import CartWidget from './components/CartWidget'
 import Masculino from './components/Masculino'
 import Femenino from './components/Femenino'
 import Unisex from './components/Unisex'
+import ItemDetailContainer from './components/ItemDetailContainer'
+import CountComponent from './components/CountComponent';
 
 function App() {
 
@@ -20,6 +22,7 @@ function App() {
           <Route exact path='/masculino' element={<Masculino/>}/>
           <Route exact path='/femenino' element={<Femenino/>}/>
           <Route exact path='/unisex' element={<Unisex/>}/>
+          <Route exact path='/item/:itemId' element={<ItemDetailContainer/>}/>
           <Route exact path='/checkout' element={<CartWidget/>}/>
         </Routes>
       </BrowserRouter>
