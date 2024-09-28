@@ -1,12 +1,17 @@
 #root {
-  max-width: 1280px;
   margin: 0;
-  padding: 2rem;
   text-align: center;
+  height: 100%;
+  width: 100%;
+  background: url(../public/imagen-fondo.jpg) center;
+  background-size: auto;
+  background-attachment: fixed;
+  padding: 0px 0px 45px 0px;
 }
 
-.card {
-  padding: 2em;
+.h1-Titulo{
+  background-color: #dddddda9;
+  margin: 0px;
 }
 
 .navClass{
@@ -14,32 +19,43 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 1em;
-  background-color: #a5a5a5;
+  background-color: #dddddda9;
   color: #fff;
 }
 
-.ItemDetail{
+.div-ItemDetail{
+  display: flex;
   flex-wrap: wrap;
-  border: 1px solid #ddd;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+
+.ItemDetail{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid #dddddd94;
   border-radius: 8px;
-  padding: 16px;
+  padding: 10px;
   width: 200px;
+  height: 400px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #dddddd94;
 }
 
 .image-ItemDetail{
+  background-color: white;
   object-fit: contain;
   width: 100%;
-  height: auto;
+  height: 65%;
   border-radius: 8px;
   border: 1px solid #02020223;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 
 .button-ItemDetail{
-  margin-top: 12px;
-  padding: 8px 16px;
+  padding: 5px;
   background-color: #5d73a5;
   color: white;
   border: none;
@@ -48,7 +64,27 @@
 }
 
 .link-NavBar{
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.25s;
+}
+
+.button-NavBar{
+  padding: 5px;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.style-ItemListContainer{
+  backdrop-filter: blur(4px);
+  padding: 20px 0px 20px 0px;
+  margin: 20px 20px 0px 20px;;
+  gap: 20px;
 }

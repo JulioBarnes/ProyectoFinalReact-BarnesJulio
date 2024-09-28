@@ -21,10 +21,10 @@ export default function ItemList() {
     
     return (
       <>
-        <div className='ItemDetail'>
+        <div className='div-ItemDetail'>
           {items.length > 0 ? (
             items.map((item)=>(
-              <div key={item.id}> 
+              <div className='ItemDetail' key={item.id}> 
                   <img src={item.image} alt='' className='image-ItemDetail'/>
                   <h5>{item.name}</h5>
                   <p>${item.price}</p>
@@ -33,8 +33,7 @@ export default function ItemList() {
               </div>
               ))
             ):(<h2>Cargando...</h2>) 
-          }
-          
+          }  
         </div>
       </> 
     )

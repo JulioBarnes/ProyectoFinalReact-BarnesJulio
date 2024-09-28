@@ -1,19 +1,22 @@
 import '../App.css'
 import { Link } from 'react-router-dom';
+;
 export default function NavBar(){
+
+    
     return(
         <>
             <nav className='navClass'>
-                <button>
+                <button className='button-NavBar'>
                     <Link className='link-NavBar' to={'/'}>Todos</Link>
                 </button>
-                <button>
+                <button className='button-NavBar'>
                     <Link className='link-NavBar' to={'/masculino'}>Masculino</Link>
                 </button>
-                <button>
+                <button className='button-NavBar'>
                     <Link className='link-NavBar' to={'/femenino'}>Femenino</Link>
                 </button>
-                <button>
+                <button className='button-NavBar'>
                     <Link className='link-NavBar' to={'/unisex'}>Unisex</Link>
                 </button>
                 <a> 
