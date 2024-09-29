@@ -30,9 +30,10 @@ export default function ItemDetail() {
               <div className='ItemDetail' key={item.id}> 
                   <img src={item.image} alt='' className='image-ItemDetail'/>
                   <h5>{item.name}</h5>
-                  <p>${item.price}</p>
-                  <p>Género: {item.gender}</p>
-                  <p>Disponibles: {item.stock}</p>
+                  <h6>${item.price}</h6>
+                  <h6>Género: {item.gender.toUpperCase()}</h6>
+                  <h6>{item.description}</h6>
+                  <h6>Disponibles: {item.stock}</h6>
                   <CountComponent/>
                   <button className='button-Agregar-ItemDetail'>Agregar</button>
               </div>

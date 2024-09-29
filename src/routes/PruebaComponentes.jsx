@@ -3,7 +3,7 @@ import {useParams} from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { useState , useEffect} from 'react'
 import {getFirestore, collection, getDocs, query,where} from 'firebase/firestore'
-export default function ItemList() {
+export default function PruebaComponentes() {
   
     const [items, setItems] = useState([])
 
@@ -40,15 +40,15 @@ export default function ItemList() {
     
     return (
       <>
-        <div className='div-ItemList'>
+        <div className='div-ItemDetail'>
           {items.length > 0 ? (
             items.map((item)=>(
-              <div className='ItemList' key={item.id}> 
-                  <img src={item.image} alt='' className='image-ItemList'/>
+              <div className='ItemDetail' key={item.id}> 
+                  <img src={item.image} alt='' className='image-ItemDetail'/>
                   <h5>{item.name}</h5>
                   <p>${item.price}</p>
-                  <button className='button-ItemList'> 
-                    <Link className='link-General' to={`/item/${item.id}`}>Ver Detalle</Link>
+                  <button className='button-ItemDetail'> 
+                    <Link to={`/item/${item.id}`}>Ver Detalle</Link>
                   </button>
               </div>
               ))
