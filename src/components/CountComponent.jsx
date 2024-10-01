@@ -6,11 +6,11 @@ import '../App.css'
 export default function CountComponent({price, stock, item}){
   const [count, setCount] = useState(0);
 
-  const [,,addItem,]=useContext(CartContext)
+  //const [,,addItem,]=useContext(CartContext)
 
-  const agregarAlCarrito=()=>{
-    addItem(item)
-  }
+  //const agregarAlCarrito=()=>{
+  //  addItem(item)
+  //}
 
   const increment = () => {
     if(count < stock){
