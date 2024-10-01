@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 import UserInfo from './UserInfo';
 export default function CartWidget() {
-  const [cart,,countCart] = useContext(CartContext);
+  const [cart] = useContext(CartContext);
 
   return (
     <>
@@ -30,7 +30,7 @@ export default function CartWidget() {
               Total: ${cart.reduce((acc, item) => acc + (item.price*item.quantity), 0)}
             </p>
           </div>
-          {/* <UserInfo carrito={cart} createNewOrder={createNewOrder} /> */}
+          <UserInfo carrito={cart} />
         </>
       )}
     </>

@@ -1,25 +1,32 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { CartContext } from '../context/CartContext';
 
-export default function UserInfo({carrito,createNewOrder}){
+export default function UserInfo({carrito}){
+
+    {/* const [createNewOrder] = useContext(CartContext) */}
     const [nombre, setNombre] = useState('')
     const [apellido, setApellido] = useState('')
     const [telefono, setTelefono] = useState('')
     const [email, setEmail] = useState('')
 
+    
     const handleSubmit=()=>{
-        const order = [
-            buyer= {
+        const order = {
+            buyer:{
                 nombre,
                 apellido,
                 telefono,
                 email
             },
-            items=carrito,
-            RealizadaEl = new Date()
-        ]
-        
-        createNewOrder(order)
+            items:carrito,
+            RealizadaEl : new Date()
+        }
+        console.log(order)
+    }    
+        {/*createNewOrder(order)
     }
+        
+    */}
 
     return (
         <>
