@@ -34,8 +34,7 @@ export default function ItemDetail() {
                   <h6>Género: {item.gender.toUpperCase()}</h6>
                   <h6>{item.description}</h6>
                   <h6>Disponibles: {item.stock}</h6>
-                  <CountComponent/>
-                  <button className='button-Agregar-ItemDetail'>Agregar</button>
+                  <CountComponent item={item} price={item.price} stock={item.stock} />
               </div>
             ) : (
               <h2>Cargando...</h2>

@@ -1,9 +1,12 @@
 import '../App.css'
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 ;
 export default function NavBar(){
 
-    
+///    const[cart]=useContext(CartContext)
+
     return(
         <>
             <nav className='div-navClass'>
@@ -30,6 +33,7 @@ export default function NavBar(){
                         <Link className='link-General' to={'/checkout'}>
                             <img src="/CartIcon.png" alt="carrito de compras" />
                             <span>1</span>
+                            {/* <span>{cart.length}</span> */}
                         </Link>
                     </a>                    
                 </div>                          

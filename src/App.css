@@ -117,11 +117,15 @@
 
 .button-Agregar-ItemDetail{
   padding: 5px;
-  background-color: #4CAF50;
+  background-color: #000000;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.button-Agregar-ItemDetail:hover{
+  background-color: #4CAF50;
 }
 
 .link-General{
@@ -187,4 +191,41 @@
   font-size: 24px;
   font-weight: bold;
   padding: 10px;
+}
+
+.div-UserInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0000008a;
+  gap: 10px;
+  padding: 20px;
+}
+
+.form-UserInfo{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: #0000008a;
+  gap: 10px;
+  padding: 20px;
+}
+
+.input-UserInfo {
+  width: 100%;
+  height: 30%;
+}
+
+.button-UserInfo{
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-UserInfo:hover{
+  background-color: #45a049;
 }
