@@ -166,14 +166,14 @@
   gap: 20px;
 }
 
-.counter-container {
+.div-CountComponent {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.counter-button {
+.button-CountComponent {
   background-color: #1a1a1a;
   border: none;
   color: white;
@@ -187,14 +187,20 @@
   transition: background-color 0.3s ease;
 }
 
-.counter-button:hover {
+.button-CountComponent:hover {
   background-color: #45a049;
 }
 
-.counter-display {
+.span-CountComponent {
   font-size: 24px;
   font-weight: bold;
   padding: 10px;
+}
+
+.h1-UserInfo {
+  background-color: #0000008a;
+  color: white;
+  margin: 0;
 }
 
 .div-UserInfo {
@@ -234,7 +240,13 @@
   background-color: #45a049;
 }
 
-.cart-container {
+.resume-UserInfo {
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+}
+
+.div-CartWidget {
   width: 100%;
   max-width: 600px;
   margin: 20px auto;
@@ -245,12 +257,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.cart-items {
+.ul-CartWidget {
   list-style-type: none;
   padding: 0;
 }
 
-.cart-item {
+.item-div-CartWidget {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -259,25 +271,26 @@
   border-bottom: 1px solid #ddd;
 }
 
-.cart-item-image {
+.item-image-CartWidget {
   width: 80px;
   height: 80px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 8px;
 }
 
-.cart-item-name {
+.item-name-CartWidget {
   font-size: 18px;
   flex: 2;
   margin-left: 15px;
 }
 
-.cart-item-price, .cart-item-quantity {
+.item-price-CartWidget,
+.item-quantiy-CartWidget {
   font-size: 16px;
   text-align: right;
 }
 
-.cart-total {
+.total-CartWidget {
   text-align: right;
   font-size: 22px;
   font-weight: bold;

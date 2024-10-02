@@ -6,7 +6,6 @@ export const CartContext = createContext([]);
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
   const [countCart, setCountCart] = useState([]);
-  const [orderId, setOrderId] = useState('');
 
   const addCart = (item) => {
     setCart([...cart, item]);
@@ -16,28 +15,16 @@ export function CartProvider({ children }) {
     setCountCart([...countCart, count]);
   };
 
-  const createNewOrder = () => {
+  const createNewOrder = (order) => {
     const db = getFirestore();
-
-    const order = collection(db, 'orders');
-
-    addDoc(orders, order).then((snapshot) => {
-      setOrderId(snapshot.id);
+    const orderCollection = collection(db, 'orders');
+    return addDoc(orderCollection, order).then((pedido) => {
+      return pedido;
     });
   };
 
   return (
-    <CartContext.Provider
-      value={[
-        cart,
-        setCart,
-        countCart,
-        setCountCart,
-        addItem,
-        addCart,
-        createNewOrder,
-      ]}
-    >
+    <CartContext.Provider value={[cart, setCart, countCart, setCountCart, addItem, addCart, createNewOrder,]}>
       {children}
     </CartContext.Provider>
   );
